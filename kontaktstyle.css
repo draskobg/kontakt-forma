@@ -1,3 +1,37 @@
+* {
+    box-sizing: border-box
+}
+
 label {
   display: block;
+  vertical-align: top;
+  width: 25%;
+}
+
+.vezba button {
+    background-color: gray;
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 10px;
+    float: right;
+    margin-right: 45px;
+
+   
+}
+
+.vezba {
+    background-color:#D3D3D3;
+    width: 50%;
+    display:flow-root;
+    margin: 40px auto;
+    padding: 60px 60px 20px;
+    border-radius: 4px;
+}
+
+.vezba form {
+    padding-left: 42px;
 }

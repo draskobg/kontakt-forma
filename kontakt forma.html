@@ -1,30 +1,92 @@
 <link rel="stylesheet" href="kontaktstyle.css">
 
 <form class="prosta-forma" method="post" action="https://formspree.io/draskosorak@gmail.com">
-  Ime i prezime: <input name="Ime">
-  Telefon: <input name="Telefon">
-  Email: <input type="email" name="Email">
-  <button>Posalji</button>
+    Ime i prezime: <input name="Ime">
+    Telefon: <input name="Telefon">
+    Email: <input type="email" name="Email">
+    <button>Posalji</button>
 </form>
 
 
 <form class="drugaforma" method="post" action="https://formspree.io/draskosorak@gmail.com">
 
-  <div class="ime">
-    <label for="Ime">Ime i prezime:</label>
-    <input name="Ime" id="Ime" placeholder="Unesite ime i prezime" required>
-  </div>
+    <div class="ime">
+        <label for="Ime">Ime i prezime:</label>
+        <input name="Ime" id="Ime" placeholder="Unesite ime i prezime" required>
+    </div>
 
-  <div class="telefon">
-    <label for="Telefon">Telefon: </label>
-    <input name="Telefon" id="Telefon" placeholder="+381" required>
-  </div>
+    <div class="telefon">
+        <label for="Telefon">Telefon: </label>
+        <input name="Telefon" id="Telefon" placeholder="+381" required>
+    </div>
 
-  <div class="email">
-    <label for="email">Email:</label>
-    <input type="email" name="Email" id="email" placeholder="Unesite email" required>
-  </div>
+    <div class="email">
+        <label for="email">Email:</label>
+        <input type="email" name="Email" id="email" placeholder="Unesite email" required>
+    </div>
 
-  <button>Posalji</button>
+
+
+
+    <div>
+        <label for="poruka">Ostavite poruku</label>
+        <textarea name="poruka" id="poruka" cols="30" rows="10">Poruka</textarea>
+    </div>
+
+    <div>
+
+        <label for="jezik">Izaberite jezik</label>
+        <select name="jezik" id="jezik">
+            <option value="1">JavaScript</option>
+            <option value="2">PHP</option>
+            <option value="3">C</option>
+        </select>
+    </div>
+    <div>
+        <input type="checkbox" id="uslovi" required>
+        <label for="uslovi" style="display:inline">Prihvatam uslove koriscenja</label>
+    </div>
+
+    <input type="checkbox" cols="30" rows="50" required>
+    <button>Posalji</button>
+
 
 </form>
+
+
+
+<div class="vezba">
+    <form>
+
+        <h4>Contact with us by this form fill these fields in below</h4>
+        <div>
+            <div style="display:inline-block;width: 25%">
+            Your name</div> <input type="text">
+        </div>
+        <div>
+            <div style="display:inline-block;width: 25%">
+            Your E-mail </div><input type="email">
+        </div>
+        <div>
+            <label for="izaberi" style="display:inline-block">Support</label>
+            <select name="izaberi" id="izaberi">
+                <option value="1">Technical support</option>
+                <option value="2">Choose something else</option>
+                <option value="3">Choose third option</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="poruka" style="display:inline-block">Your problem</label>
+            <textarea name="poruka" id="poruka" cols="30" rows="10" style="display:inline">Please enter your problem</textarea>
+        </div>
+
+    </form>
+
+    <button>Send</button>
+
+</div>
+
+
+
+
